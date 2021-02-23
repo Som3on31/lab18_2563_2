@@ -85,11 +85,11 @@ int main(){
 				state = 3;
 			}else{
 				
-				allcourses.back().lecture_list.push_back(textline);
+				allcourses.back().lecture_list.push_back(textline);	
 				
-
-				//Append (push_back) textline to lecture_list[] of the recently added course in allcourses[];
-			    
+				/*First, access allcourses vecctor 
+				and then to lecture_list vecctor in orfer to push back the textline.*/
+								
 			}			
 		}else{
 			if(textline == "---------------------------------------"){
@@ -98,7 +98,7 @@ int main(){
 				student *p = findstudent(allstudents,atof(textline.c_str()));
 				
 				
-				allcourses.back().student_list.push_back(p);		//Append (push_back) p to student_list of the recently added course in allcourses[];
+				allcourses.back().student_list.push_back(p);	// It is explained above.
 				
 			}
 		}
